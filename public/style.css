@@ -1,0 +1,126 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+header > a{
+    margin-right: 2rem;
+    font-family: sans-serif;
+    color: #6C6076;
+    text-decoration: none;
+}
+
+.hpbg{
+    position: relative;
+    top: -3.5rem;
+    overflow: hidden;
+}
+
+#title{
+    position: relative;
+    text-align: center;
+    top: -25rem;
+    font-family: 'Caveat', cursive;
+    color: #6C6076;
+}
+
+#welcome{
+    position: relative;
+    left: -13rem;
+    font-size: 3.5rem;
+}
+
+#productName{
+    position: relative;
+    font-size: 7rem;
+}
+
+#authbox{
+    position: relative;
+    top: -25rem;
+    left: calc(50% - 10.5rem);
+    z-index: 1;
+    width: 21rem;
+    height: 25rem;
+    background-color: #FDF9EE80;
+    border-radius: 25px;
+}
+
+#authbox > h2{
+    position: inherit;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 3rem;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: #6C6076;
+}
+
+#loginForm > div{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+#registerForm > div{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0.6rem;
+    margin-top: 0.7rem;
+    padding-left: 2rem;
+}
+
+#loginForm > div > div, #registerForm > div > div{
+    display: table-row;
+}
+
+#loginForm > div > div > label, #loginForm > div > div > input,
+        #registerForm > div > div > label{
+    display: table-cell;
+}
+
+#registerForm > div > div > div{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+
+#loginForm > div > div > label, #registerForm > div > div > label{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #6C6076;
+}
+
+#loginbutton, #registerbutton{
+    position: relative;
+    margin-left: calc(50% - 2.5rem);
+    margin-top: 1.5rem;
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #6C607680;
+    border-radius: 10px;
+    border: none;
+}
+
+#authbox > p{
+    text-align: center;
+    color: #6C6076;
+}
+
+#authbox > p > a{
+    text-decoration: none;
+    color: #3d6ea7;
+}
