@@ -44,9 +44,13 @@ header > a{
 }
 
 #authbox{
-    position: relative;
-    top: -25rem;
-    left: calc(50% - 10.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     width: 21rem;
     height: 25rem;
@@ -55,10 +59,9 @@ header > a{
 }
 
 #authbox > h2{
-    position: inherit;
     text-align: center;
+    margin-top: 3rem;
     margin-bottom: 0;
-    padding-top: 3rem;
     font-family: 'Caveat', cursive;
     font-size: 3rem;
     color: #6C6076;
@@ -69,7 +72,6 @@ header > a{
     border-collapse: separate;
     border-spacing: 1rem;
     margin-top: 2rem;
-    padding-left: 2rem;
 }
 
 #registerForm > div{
@@ -77,7 +79,6 @@ header > a{
     border-collapse: separate;
     border-spacing: 0.6rem;
     margin-top: 0.7rem;
-    padding-left: 2rem;
 }
 
 #loginForm > div > div, #registerForm > div > div{
@@ -104,7 +105,7 @@ header > a{
 
 #loginbutton, #registerbutton{
     position: relative;
-    margin-left: calc(50% - 2.5rem);
+    margin-left: calc(50% - 3rem);
     margin-top: 1.5rem;
     width: 6rem;
     height: 2rem;
@@ -123,4 +124,49 @@ header > a{
 #authbox > p > a{
     text-decoration: none;
     color: #3d6ea7;
+}
+
+.authAlert{
+    color: red;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#welcomeUser{
+    position: relative;
+    top: -29rem;
+    left: 3rem;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: #6C6076;
+}
+
+#welcomeUser > div > a{
+    text-decoration: none;
+}
+
+#signoutbutton{
+    border: none;
+    background-color: transparent;
+    margin-right: 2rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #6C6076;
+    text-decoration: none;
+}
+
+#todoListForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#todoListForm > textarea{
+    height: 7rem;
+    width: 40rem;
+}
+
+#todoListForm > button{
+    margin-top: 1rem;
+    width: 3rem;
 }

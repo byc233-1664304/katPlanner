@@ -5,10 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="autor" content="Yichun Bai">
-        <link rel="stylesheet" href="../style.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">  
         <title>Kat Planner Log In</title>
     </head>
 
@@ -20,11 +20,14 @@
 
         <div>
             <div class="hpbg">
-                <%- include ("../images/hpbg.svg") %>
-            <div>    
+                <img src="/images/hpbg.svg" alt="Background Image" class="hpbg">
+            </div>    
                 
             <div id="authbox">
                 <h2>Kat Planner</h2>
+                <div class="authAlert">
+                    <%- alertMessage %>
+                </div>
                 <%- authContent %>
             </div>
         </div>

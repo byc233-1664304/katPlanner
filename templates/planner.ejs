@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="autor" content="Yichun Bai">
-        <link rel="stylesheet" href="../style.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">        
@@ -15,25 +15,19 @@
     <body>
         <header>
             <a href="">Contact Us</a>
-            <a href="/" id="signOutbutton">Sign Out</a>
+            <form id="signOutForm" method="post" action="/"><button type="submit" id="signoutbutton">Sign Out</button></form>
         </header>
         <div>
-            <div class="hpbg">
-                <%- include ("../images/hpbg.svg") %>  
-            <div>    
+            <img src="/images/hpbg.svg" alt="Background Image" class="hpbg">   
                 
-            <div id="title">
-                <div id="welcome">Welcome to</div>
-                <div id="productName">Kat Planner</div>
+            <div id="welcomeUser">
+                <div>Welcome to Kat Planner, <a href=""><%- username %></a>!</div>
+                
+                <form id="todoListForm" method="post" action="/planner">
+                    <textarea name="todo" contenteditable><%- event %></textarea>
+                    <button type="submit">Save</button>
+                </form>
             </div>
         </div>
     </body>
-
-    <script>
-        function signOut() {
-            document.getElementById("signOutbutton").onclick = () => {
-                window.localStorage.clear();
-            };
-        }
-    </script>
 </html>
